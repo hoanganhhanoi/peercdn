@@ -169,7 +169,7 @@ var dataChannelData = {
         channel.send(JSON.stringify({send_data}));
       
       }
-      if(get_data != false) {
+      if(get_data != false && get_data != undefined) {
         console.log("Gui trang thai da tim duoc du lieu");
         var send_data = {
           eventName: "RES_FOUND",
